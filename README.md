@@ -1,4 +1,4 @@
-# genetics-Panel
+# Genetics-Panel
 These codes help you to find panel of different diseases. Panels can be download from diffetent sources including https://panelapp.genomicsengland.co.uk/panels/
 which provides the common genes of different disease. With these codes you can merge all of your patients excel files to each other and serach the special genes you need among them. Then you can find the similarity of genes amogst your patients and use for your studies.
 
