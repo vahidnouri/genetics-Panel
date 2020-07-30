@@ -18,9 +18,9 @@ which provides the common genes of different disease. These codes can merge all 
 * Ref: Nucleotide of reference genome.
 * Alt: Alteration of the gene incomparison with the reference genome.
 * ClinVar.Name: A name that Clinvar assign to the variants.
-* Transcript: 
-* Population.AF:
-* Protein.Change:
+* Transcript: Shows the regeistered transcript number.
+* Population.AF: Allele frequency in specific population.
+* Protein.Change
 * Zygosity: Shows if the gene is homozygote or heterozygote.
 * Patient_name: Name of patient based on the file name.
 
