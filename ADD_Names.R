@@ -1,10 +1,14 @@
 library(openxlsx)
+library(readr)
+
 
 path <- "C:/Users/gen/Documents/R/New_files"
 
 filenames_list <- list.files(path= path, full.names=TRUE)
 lapply(filenames_list,function(filename){
-  File <- data.frame(read.csv(filename))
+  File <- data.frame(read_csv(filename))
+  # Use read_tsv for .gz file as below:
+  # File <- data.frame(read_tsv(filename))
 
   File$Patient_name <- substr(filename,start = 30, stop = 50)
   Final <- data.frame(File$Gene, File$Type, File$Change, File$Effect,
@@ -32,5 +36,3 @@ lapply(filenames_list,function(filename){
 
   
 })
-
-# test <- filenames_list[1]+"new"
