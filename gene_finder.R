@@ -1,11 +1,7 @@
 merge_file_name <- "C:/Users/gen/Documents/R/Merge/merged_file.csv"
 df <- read.csv(merge_file_name)
 genes <- c("HLA","ACE2")
-for (i in genes){
-  ans <- df[df$Gene == i, ]  
-}
-
-
+ans <- df[which(df$Gene == genes), ]
 answer_file <- "C:/Users/gen/Documents/R/Merge/answer_file.csv"
 
 write.csv(ans,answer_file)
